@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>LOL</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      color: red;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      font-size: 50px;
+    }
+
+    #errorScreen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: blue;
+      color: white;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 60px;
+      z-index: 10;
+    }
+
+    #mainText {
+      margin-top: 20%;
+    }
+  </style>
+</head>
+<body>
+
+<div id="errorScreen">error :(</div>
+
+<div id="mainText">
+ LET ME ENTER TO YOUR REALITYYYY
+</div>
+
+<script>
+  function showError() {
+    const error = document.getElementById("errorScreen");
+    error.style.display = "flex";
+    setTimeout(() => {
+      error.style.display = "none";
+    }, 1000);
+  }
+
+  setInterval(showError, 2000);
+</script>
+
+</body>
+</html>
