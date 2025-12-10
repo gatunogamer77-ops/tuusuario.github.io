@@ -26,6 +26,7 @@
       justify-content: center;
       font-size: 60px;
       z-index: 10;
+      text-transform: uppercase;
     }
 
     #mainText {
@@ -35,21 +36,23 @@
 </head>
 <body>
 
-<div id="errorScreen">error :(</div>
+<div id="errorScreen">you have mail (setraba)</div>
 
 <div id="mainText">
- LET ME ENTER TO YOUR REALITYYYY
+  YOU'RE SO GULLIBLE HAHAHAHA 😂🤣😂🤣😂🤣
 </div>
 
 <script>
   function showError() {
     const error = document.getElementById("errorScreen");
     error.style.display = "flex";
+
     setTimeout(() => {
       error.style.display = "none";
     }, 1000);
   }
 
+  // Repetir infinitamente
   setInterval(showError, 2000);
 </script>
 
