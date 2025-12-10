@@ -32,6 +32,13 @@
     #mainText {
       margin-top: 20%;
     }
+
+    button {
+      margin-top: 40px;
+      font-size: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -39,8 +46,14 @@
 <div id="errorScreen">you have mail (setraba)</div>
 
 <div id="mainText">
-  YOU'RE SO GULLIBLE HAHAHAHA 😂🤣😂🤣😂🤣
+  LET ME ENTER TO YOU REALITY�
+  <br>
+  <button onclick="playMusic()">Play Music 🎵</button>
 </div>
+
+<audio id="music">
+  <source src="VIRUS-SacriStuff Sub español y ingles (virus-kaaatie).mp3" type="audio/mpeg">
+</audio>
 
 <script>
   function showError() {
@@ -52,8 +65,12 @@
     }, 1000);
   }
 
-  // Repetir infinitamente
+  // Efecto infinito
   setInterval(showError, 2000);
+
+  function playMusic() {
+    document.getElementById("music").play();
+  }
 </script>
 
 </body>
